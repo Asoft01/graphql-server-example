@@ -32,7 +32,7 @@ const server = new ApolloServer({
 });
 
 const { url } = await startStandaloneServer(server, {
-    listen : { port: 6000 }
+    listen : { port: 5000 }
 }); 
 
-console.log('Server ready at port', 6000);
+console.log('Server ready at port', 5000);
