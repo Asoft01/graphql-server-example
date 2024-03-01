@@ -6,7 +6,7 @@ import { startStandaloneServer } from '@apollo/server/standalone';
 import db from './_db.js'; 
 
 // types 
-import { typeDefs } from './schema';
+import { typeDefs } from './schema.js';
 // server setup 
 
 const resolvers = {
@@ -32,7 +32,7 @@ const server = new ApolloServer({
 });
 
 const { url } = await startStandaloneServer(server, {
-    listen : { port: 4000 }
+    listen : { port: 6000 }
 }); 
 
-console.log('Server ready at port', 4000);
+console.log('Server ready at port', 6000);
