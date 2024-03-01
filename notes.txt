@@ -2,3 +2,5 @@ mkdir graphql-server-example
 cd graphql-server-example
 
 npm init --yes && npm pkg set type="module"
+
+extension : graphql syntax highlighting

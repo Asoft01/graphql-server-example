@@ -4,7 +4,8 @@ import { startStandaloneServer } from '@apollo/server/standalone';
 
 // server setup 
 const server = new ApolloServer({
-    // typeDefs 
+    // typeDefs -- definitions of types of data
+    // resolvers 
 });
 
 const { url } = await startStandaloneServer(server, {
