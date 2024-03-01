@@ -3,7 +3,7 @@ import { startStandaloneServer } from '@apollo/server/standalone';
 // import { startStandaloneServer } from '@apollo/server/dist/esm/standalone';
 
 // types 
-import { typeDefs } from './schema';}
+import { typeDefs } from './schema';
 // server setup 
 const server = new ApolloServer({
     // -- definitions of types of data
