@@ -7,7 +7,7 @@ import { typeDefs } from './schema';
 // server setup 
 const server = new ApolloServer({
     // -- definitions of types of data
-    typeDefs 
+    typeDefs
     // resolvers 
 
 });
