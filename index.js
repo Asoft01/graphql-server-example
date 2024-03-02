@@ -29,8 +29,23 @@ const resolvers = {
         review(_, args) {
             return db.reviews.find((review) => review.id === args.id)
         }
-    }    
+    }, 
+    Game: {
+        reviews(parent) {
+            return db.reviews.filter((r) => r.game_id === parent.id)
+        }
+    }   
 }
+
+// query GameQuery($id: ID!) {
+//     game(id: $id) {
+//         title, 
+//         reviews {
+//             rating 
+//             content 
+//         }
+//     }
+// }
 
 const server = new ApolloServer({
     // -- definitions of types of data
