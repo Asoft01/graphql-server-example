@@ -29,4 +29,4 @@ export const typeDefs = `#graphql
         author(id: ID!): Author
     }
 `
-// int, float, string, boolean, ID 
+// int, float, string, boolean, ID
